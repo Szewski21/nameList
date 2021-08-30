@@ -1,0 +1,56 @@
+$body-color: #E2F5FF;
+$border: 3px solid 	rgba(0, 0, 0, 0.2);
+$radius: 25px;
+$center: auto;
+
+
+.container {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.square {
+  width: 500px;
+  height: 500px;
+  margin: $center;
+  background-color: $body-color;
+  border: $border;
+  border-radius: $radius;
+  padding-top: 25px;
+  text-align: center;
+}
+
+.list {
+  width: 100%;
+  margin-top: 30px;
+
+  &-item {
+    width: 300px;
+    margin: $center;
+    height: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
+.input {
+  margin: 25px;
+}
+
+input {
+  padding: 5px;
+  height: 35px;
+}
+
+.button {
+  margin: 25px;
+}
+
+button > * {
+  pointer-events: none;
+}
+
+.format-input {
+  border: none !important;
+  background: none !important;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Webpack App</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link  href="../dist/main.css" rel="stylesheet">
+        <link rel="shortcut icon" href="http://d1ujqdpfgkvqfi.cloudfront.net/favicon-generator/htdocs/favicons/2015-02-03/cb27b0ebbc4d80a5f30865bfee92638c.ico">
+        <script defer src="../node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
+        <script defer src="../node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+        <script defer src="../node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+    </head>
+    <body>
+    <div id="notification" class="container"></div>
+        <div class="container">
+            <div class="square">
+                <h1>Lista osób</h1>
+                <div class="list">
+                    <div class="list-item rounded-3" id="people-list">
+                    </div>
+                    </div>
+                    <div class="form p-5">
+                        <form id="addPersonForm" action="POST">
+                            <div class="form-group">
+                                <div class="row align-items-center">
+                                    <div class="col-2">
+                                        <label for="name">Imię:</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input name="name" id="name" type="text" placeholder="Imie"  class="form-control form-control-sm"/>
+                                    </div>
+                                    <div class="col-2">
+                                        <button type="submit" id="addPersonFormButton" class="btn btn-outline-secondary btn-sm">Dodaj</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../dist/app.js" ></script>
+    </body>
+</html>
